@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)http://www.cnblogs.com/schaepher/p/4933873.html#second -->
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./GitHub团队项目合作流程 - schaepher - 博客园_files/hm.js.下载"></script><script src="./GitHub团队项目合作流程 - schaepher - 博客园_files/hm.js(1).下载"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GitHub团队项目合作流程 - schaepher - 博客园</title>
+<link type="text/css" rel="stylesheet" href="./GitHub团队项目合作流程 - schaepher - 博客园_files/blog-common.css">
+<link id="MainCss" type="text/css" rel="stylesheet" href="./GitHub团队项目合作流程 - schaepher - 博客园_files/bundle-SimpleMemory.css">
+<link type="text/css" rel="stylesheet" href="./GitHub团队项目合作流程 - schaepher - 博客园_files/244067.css">
+<link id="mobile-style" media="only screen and (max-width: 768px)" type="text/css" rel="stylesheet" href="./GitHub团队项目合作流程 - schaepher - 博客园_files/bundle-SimpleMemory-mobile.css">
+<link title="RSS" type="application/rss+xml" rel="alternate" href="http://www.cnblogs.com/schaepher/rss">
+<link title="RSD" type="application/rsd+xml" rel="EditURI" href="http://www.cnblogs.com/schaepher/rsd.xml">
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="http://www.cnblogs.com/schaepher/wlwmanifest.xml">
+<script async="" src="./GitHub团队项目合作流程 - schaepher - 博客园_files/analytics.js.下载"></script><script src="./GitHub团队项目合作流程 - schaepher - 博客园_files/jquery.js.下载" type="text/javascript"></script>  
+<script type="text/javascript">var currentBlogApp = 'schaepher', cb_enable_mathjax=true;var isLogined=false;</script>
+<script src="./GitHub团队项目合作流程 - schaepher - 博客园_files/blog-common.js.下载" type="text/javascript"></script>
+<style>#page{z-index:999}#page .blue{color:#29cee9}#page .red{color:#f22}.ovf-hidden{overflow:hidden;height:100%}.ajax-loading{z-index:2147483647;background-color:#000;position:fixed;width:100%;height:100%;top:0;text-align:center;display:none;opacity:.6;filter:alpha(opacity=60)}.ajax-loading div{margin-top:23%}.ajax-loading img{width:50px;height:50px}ul,li,p,em{list-style-type:none;-webkit-padding-start:0;-webkit-margin-before:0;-webkit-margin-after:0;-webkit-margin-start:0;-webkit-margin-end:0;margin:0;padding:0}div[id^="yht"] *,div[class^="yht"] *{box-sizing:border-box;margin:0;padding:0;text-decoration:inherit}.yht-red{color:#FC4E4E}.yht-panel-right{position:fixed;right:0;bottom:300px;z-index:2147483647}.yht-panel-right .yht-hide{display:none}.yht-panel-right a{position:relative;display:inline-block}.yht-panel-right a .close{position:absolute;right:0;top:-5px;width:11px;height:11px;display:inline-block;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6Njk5QUNFNjhGM0U3MTFFNkIyQjVGRDJDQzY2OENDRjgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6Njk5QUNFNjlGM0U3MTFFNkIyQjVGRDJDQzY2OENDRjgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2OTlBQ0U2NkYzRTcxMUU2QjJCNUZEMkNDNjY4Q0NGOCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2OTlBQ0U2N0YzRTcxMUU2QjJCNUZEMkNDNjY4Q0NGOCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pv16ibIAAAEkSURBVHjaVJC/L0NRFMe/97E+NjpIvIGxTYxIMVKNRKT8DxYjEoPRyNJEhMGmwdh2E/EfWCyGiqXmtxE5Pve+1746ud9zz4/vPefc46y2pCCmWdSRnKvhlUAftMEZuQ85ydnGItqtE2yBWKNihnIpxF2MbgQxwbgjEReE0MkX8UZMzBdKItQxmAiEm0ep1sjIdYpdtfIHoePh2OncTBNjMgR/fqX9A2rMS9s8ur2W3t98C3+mxiFND2ds30uVBam6Jj0/SZ2HbKysesmP8TUk1/ek5RXpBWJ1VdpsDIhe+p7cGX7Kt26es6wT7gtpa6f4LNtw7DnBeWWmuEjYaEUvKaFKhOrle0xD+B9nQDTy1ovyZBeUwSX4BN/hNnyzcp7XnwADAO0gVGJsn/VTAAAAAElFTkSuQmCC) no-repeat}.yht-panel-right a .tips{position:absolute;right:14px;bottom:22px;width:10px;height:10px;display:inline-block;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QjlBMTlCNzlGMjhGMTFFNkFGNzJDMUU5QzcyNTM2NzkiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QjlBMTlCN0FGMjhGMTFFNkFGNzJDMUU5QzcyNTM2NzkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpCOUExOUI3N0YyOEYxMUU2QUY3MkMxRTlDNzI1MzY3OSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpCOUExOUI3OEYyOEYxMUU2QUY3MkMxRTlDNzI1MzY3OSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PlPVhYUAAACESURBVHjaYvz//z8DFMgDsS4Qi0L5r4H4EhA/AnEYoQpNgdiQAQGEgfgtlH0eiE8zAQk5JEUgBZlAbIWkCSQnD1KohyTIBcTHGTCBLguSm0DgMRBzYlEoysRAJGCC+o4QeA1SeBlN8DuSj2HgMq7gQQbg4GHEEuBiUP4rqG0PQRyAAAMApbkf/hNU998AAAAASUVORK5CYII=) no-repeat}.yht-panel-right a .tips:hover .tip{display:block}.yht-panel-right a .tip{display:inline-block;vertical-align:middle;margin:5px;width:60px;font:12px "Microsoft YaHei","SimHei","Arial"!important;word-break:break-line;word-wrap:break-word;text-align:center;position:absolute;top:5px;left:-44px;line-height:16px;color:#29cee9;padding-top:9px}.yht-panel-right a .tip .tip-content{position:relative;background:#fff;border-radius:8px;border:1px solid #29cee9}.yht-panel-right a .tip .tip-content:before,.yht-panel-right a .tip .tip-content:after,.yht-panel-right a .tip .tip-content .before,.yht-panel-right a .tip .tip-content .after{position:absolute;top:-13px;right:5px;width:0;height:0;content:'';border-style:solid;border-color:transparent;border-bottom:9px solid #29cee9;border-left-width:9px;border-right-width:10px}.yht-panel-right a .tip .tip-content:after,.yht-panel-right a .tip .tip-content .after{position:absolute;top:-12px;border-bottom-color:#fff}.yht-panel-right a .tip .tip-content{padding:3px}.yht-panel-right a .tip{display:none;z-index:999999}.yht-panel-right a>div{position:absolute;right:20px;top:-35px}.yht-panel-as{position:fixed;bottom:20px;left:0;z-index:2147483647}.yht-panel-as .yht-hide{display:none}.yht-small-panel-bg{position:relative;display:inline-block}.yht-small-panel-bg img{cursor:pointer}.yht-small-panel-bg .yht-small-panel-close{position:absolute;top:0;right:0}.yht-panel-at{position:relative;font-size:14px}.yht-panel-at .yht-red-pack{position:absolute;top:-47px;left:73px}.yht-panel-at .yht-panel-back{position:absolute;top:105px;right:6px}.yht-panel-at .yht-read-inpunt{position:absolute;top:33px;right:240px;font-family:"Microsoft YaHei","SimHei","Arial"!important;display:inline-block;width:250px;text-align:center;color:#de8001}.yht-panel-at .yht-read-inpunt input{line-height:30px;text-indent:10px;font-family:"Microsoft YaHei","SimHei","Arial"!important}.yht-panel-at .yht-read-inpunt input,.yht-panel-at .yht-read-inpunt button{height:30px;display:inline-block;border:none;background:#fff}.yht-panel-at .yht-read-inpunt .yht-mobile,.yht-panel-at .yht-read-inpunt button{width:205px}.yht-panel-at .yht-read-inpunt .yht-mobile{margin-top:10px}.yht-panel-at .yht-read-inpunt .yht-image{width:205px;margin:10px 0}.yht-panel-at .yht-read-inpunt .yht-image a{float:right}.yht-panel-at .yht-read-inpunt .yht-image-code{width:104px;margin-left:6px}.yht-panel-at .yht-read-inpunt img{width:62px;height:28px;display:inline-block}.yht-panel-at .yht-read-inpunt button{background:#de8001;color:#fff;line-height:25px;font:14px "Microsoft YaHei","SimHei","Arial"!important;text-indent:0}.yht-panel-at .yht-read-inpunt button:hover{background:#c57101}.panel-qq-zone{position:fixed;right:0;bottom:20px;z-index:2147483647;box-shadow:3px 3px 3px #E2E2E2,2px 2px 0 #333}.panel-qq-zone .yht-hide{display:none}.panel-qq-zone .close{position:absolute;right:0;top:0;width:22px;height:22px;display:inline-block;z-index:1111;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAVCAYAAABCIB6VAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDg0RjM3MTdGRTIzMTFFNjg5MDFFNzlDOUNGMUQxMDciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDg0RjM3MThGRTIzMTFFNjg5MDFFNzlDOUNGMUQxMDciPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0ODRGMzcxNUZFMjMxMUU2ODkwMUU3OUM5Q0YxRDEwNyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0ODRGMzcxNkZFMjMxMUU2ODkwMUU3OUM5Q0YxRDEwNyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pk/mPTAAAAGpSURBVHjatJXNTsJAEMenFctHKSAQpCj4kagvwAt4N/gsepWjnHkY7voCvoAXD0SjQBERCy2U1tlt0U0ptJI6yTY7s9lfpzv/nXLK4wOg3eK4gXCsgaPOIfgCJy0I12o8Pq4hfLsi4CobSe2fQjwrBybEMgVIl8/c4SoBS2zE0MeQyJcgls77QgVpB8RCGYyp5l6SIu7IuPcM5kwHcfcALPT1obISKsnHMFZeYPL+trQe8dqkffSAUJMI5zjO9hmLSllIykcroSvBFD5EGELFQgVfYqGvBIauBduZd5Fp0sxNYwamOQ8E9QWDc8amMYXU3gn1R69PMB0NfAvLB5GUNZ8zcyOQDH0zXpwpyRTPgupc7bTtGmwKZgu1+Hy120YpVn4L/FdwNIXQ4nKhbClaVOdApdgNDqaZEihelsmg4yFFIj2OZk5U43WJlsDxnAyJXAlUhGoeUFbnVIrFQ9gSYjQJN3jE9gtBTNMs10F/pPjZB35bACGZcS99kX58h5PzkNvmPdFx8x/6cZN3/h6NEKGE1VrcvDqOS/IJRKobwFRnb81hwbcAAwDKH7n8m4BodQAAAABJRU5ErkJggg==) no-repeat}.panel-qq-zone a{position:relative;display:inline-block}.panel-qq-zone a .go{position:absolute;right:40px;bottom:16px;font:20px "Microsoft YaHei","SimHei","Arial"!important;width:164px;height:40px;-webkit-user-select:none;-moz-user-select:none;user-select:none;line-height:40px;text-align:center;background:#ec4241;border-radius:5px;cursor:pointer;border:none;color:#fff}.panel-qq-zone a .go:hover{background-color:#ea2b2a}.panel-qq-zone a .go:active{background-color:#ea2b2a;outline:thin dotted;outline-offset:-2px}body .jd-hide{display:none}.jd-detail-left-recommend{font:13px "Microsoft YaHei","SimHei","Arial"!important;color:#333;position:fixed;top:150px;right:0;background-color:#fff;z-index:2147483647;-webkit-box-shadow:0 0 10px rgba(0,204,204,.5);-ms-box-shadow:0 0 10px rgba(0,204,204,.5);box-shadow:0 0 10px rgba(0,204,204,.5)}.jd-hot-goods{float:left;width:180px}.jd-hot-goods .title{font:600 16px/34px "Microsoft YaHei","SimHei","Arial"!important;width:180px;text-align:left;background-color:#ff8b8b;color:#fff;position:relative}.jd-hot-goods .title:hover .tip{display:block}.jd-hot-goods .title em{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAMCAYAAACulacQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RjlEMzcxNzMwNEFBMTFFN0FBN0JEQkVEM0IxMkIxNzQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RjlEMzcxNzQwNEFBMTFFN0FBN0JEQkVEM0IxMkIxNzQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpGOUQzNzE3MTA0QUExMUU3QUE3QkRCRUQzQjEyQjE3NCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpGOUQzNzE3MjA0QUExMUU3QUE3QkRCRUQzQjEyQjE3NCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PlykkQEAAAB5SURBVHjaYvj//78GEO8GYn4gZkDGIOL4fwg4AsRc6JIqQPwKqmAHELMhS4KwPhB/gCpYDcTMyJIgbAXEX6EK5gAxIwOaI9yA+CdUQS8TAypgQWL/RdZli2TsTGRjjZActBzZQepIXtmK7hVYIBzEFQjbsQUfQIABAPC3AbsL1ASsAAAAAElFTkSuQmCC) no-repeat center;cursor:pointer;display:inline-block;width:7px;height:12px;margin:0 28px 0 10px}.jd-hot-goods .title p{padding-left:20px;cursor:pointer;display:inline-block;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAASCAYAAAC9+TVUAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6N0M2Nzc2MEUwNEE5MTFFNzg0QzRBOEM1MzhCOUI0NDQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6N0M2Nzc2MEYwNEE5MTFFNzg0QzRBOEM1MzhCOUI0NDQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo3QzY3NzYwQzA0QTkxMUU3ODRDNEE4QzUzOEI5QjQ0NCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo3QzY3NzYwRDA0QTkxMUU3ODRDNEE4QzUzOEI5QjQ0NCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PmZuzDoAAALtSURBVHjajJNJaFRBEIb/7vcyZlwyGRNFECEuuOFCFBERPShRoqgIEfGg4iEIgoLoUTx48CCCEkUUUTS4geJCQFDc8OASl0TBuOESxySTzWQyk3nTb+myeoxh1KAWFK+rX33/q1ddDQxgRDSF/TR7G/2wFvbj7BMGykdC6Qi/HJMjsI3dpYEtw74pJ3eM4ZF09SkO1vZtbs8lmtKKqt42UUN36nexzX35aw0vCVjF8coupWdowj7zkp+IpRXOf2mH4qDqdQzxjNtfPW8d7Fa6xHCGFxxQJCQoIFR0ZPRuFfjT19e+k52uh2jIBnkuAstG0tco0D5qFs3SAYknxflyrxS4mnBJSFdTghWFJXCmUDXWh1oeytIvtRgHFwW8OTiUh6ECKHYSmNr8EiL+WEZU41sWuGA4w9tEuJ/2acVgW4R9ldgYjo5GpO4ExqdqsLByC8SwKKijGXcuHwNpDa/8ADhvwyBWYA6Gl7ZEBZcUSyXbuFMa7Z29iMdb0PutA+UTS1BWJFE+bRLyhEZGKTR+bsrmpXpaYTjDC9OozkwQyku8icvAiT6v/wTfUyidX4ZIdDgXLMwxIJ1K4WXtPbieh9kzx4LscJcXmTKqKN9ypRHJLnQmSKZ9qIyDBeVrUFg0EkLarGFln0MKCjF30Qoox0HSAaRW2nC/DJ3z7b3T7gRk/G/GVVNrOiDV87VfQPQNjaTA9YQVkvhvI4OPEkK0ZiHu8pz/Eehqb8mJBHh0lptVFnR8Gs0b/7QHN6/gY0Nddn2t+ghqzh7dVbls1jg7qylwvcvVqRH5cmgu9OHVs19E5pWtRnXVHj7uAM2xRsxbWlFSECm8KH4mtDnBfj7JHSPCEuIfFZ07eRgvbpzRPHwy1tHztL8PI8PWTq7o0NdUoLtdgvfb7/HdQtIjNPVqWrxuy+2M8i+1JXrJtuTxPz7KRzjZD4ITrhZzfeIr9WPWYAnS3PrXtpRbi8PW3U1Lpg0KtC6tvtXw6LsAAwDnbfhm4S/8xQAAAABJRU5ErkJggg==) no-repeat left;background-size:17px 18px}.jd-hot-goods .title .tip{display:inline-block;vertical-align:middle;margin:5px;font:400 12px "Microsoft YaHei","SimHei","Arial"!important;min-width:30px;position:absolute;top:-27px;left:6px;padding-bottom:6px;word-break:break-line;word-wrap:break-word;line-height:16px;color:#29cee9}.jd-hot-goods .title .tip .tip-content{position:relative;background:#fff;border-radius:8px;border:1px solid #29cee9}.jd-hot-goods .title .tip .tip-content:before,.jd-hot-goods .title .tip .tip-content:after,.jd-hot-goods .title .tip .tip-content .before,.jd-hot-goods .title .tip .tip-content .after{position:absolute;right:40px;bottom:-9px;width:0;height:0;content:'';border-style:solid;border-color:transparent;border-top:5px solid #29cee9;border-left-width:5px;border-right-width:6px}.jd-hot-goods .title .tip .tip-content:after,.jd-hot-goods .title .tip .tip-content .after{position:absolute;bottom:-8px;border-top-color:#fff}.jd-hot-goods .title .tip .tip-content{padding:3px 10px}.jd-hot-goods .title .tip{display:none;z-index:999999}.jd-hot-goods span{color:#8C8C8C}.jd-hot-goods .guess-item-img{width:108px;height:80px;display:inline-block;vertical-align:middle;font-size:0;line-height:0;text-align:center}.jd-hot-goods .guess-item-img:before{display:inline-block;vertical-align:middle;content:"";height:100%;font-size:0;line-height:0;width:0}.jd-hot-goods .guess-item-img img{display:inline-block;max-width:100%;max-height:100%;display:inline-block;vertical-align:middle;font-size:1rem;line-height:normal}.jd-hot-goods ul{margin-top:10px}.jd-hot-goods ul li{text-align:center;color:#333;font:13px "Microsoft YaHei","SimHei","Arial"!important}.jd-hot-goods ul li p{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;width:150px;margin:10px 0 0 15px}.jd-hot-goods ul li.hide{display:none}.jd-hot-goods ul .jd-price,.jd-next-hot{text-align:center;margin-bottom:10px}.jd-next-hot{color:#949395}.jd-next-hot .active{margin-left:7px}.jd-next-hot .total{margin-right:7px}.jd-next-hot em{background-color:#f0f0f0;width:20px;height:20px;display:inline-block;font:600 12px "Microsoft YaHei","SimHei","Arial"!important;color:#fff;border-radius:50%;text-align:center;line-height:15px;cursor:pointer}.jd-hot-goods-close{display:block;width:38px;max-width:38px;font:17px/26px "Microsoft YaHei","SimHei","Arial"!important;color:#ff8b8b;cursor:pointer}.jd-hot-goods-close em{background:#ff8b8b url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAMCAYAAAC5tzfZAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MDUyNzM5RkJGOThGMTFFNkJBMUZCREY1RDAxNDM2MkMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MDUyNzM5RkNGOThGMTFFNkJBMUZCREY1RDAxNDM2MkMiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowNTI3MzlGOUY5OEYxMUU2QkExRkJERjVEMDE0MzYyQyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowNTI3MzlGQUY5OEYxMUU2QkExRkJERjVEMDE0MzYyQyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PjiqrSoAAAC+SURBVHjajJJbCsIwEEWnugYR0R/xtTIF/RAXoaCgFMHtCNIliIj4qeIu2nhHb+gQInTgNHDaS5LOiHNOAhJwANPAd8AJ9GKBvftVDkb0bXCnz8JQyhcFmNC1wI3+Abo2sDWBGV0TXOmfejT1PrA2gTldA1zoX2DgN9DH0pW1MIEz3dvc7UtNRHIpq861IFr6TSK2mF5V2G1oj+fZVLhXPwwpuyp/UCITkUaaa3uVyZ8x0qkYB16n4qjN/QgwAMlO5mJd2qcFAAAAAElFTkSuQmCC) no-repeat center;display:inline-block;width:38px;height:38px}.jd-hot-goods-close p{padding:0 10px;margin-bottom:8px}.jd-add-qq{position:fixed;right:5px;bottom:10px;font:12px "Microsoft YaHei","SimHei","Arial"!important;-webkit-box-shadow:0 0 10px rgba(0,204,204,.5);-ms-box-shadow:0 0 10px rgba(0,204,204,.5);box-shadow:0 0 10px rgba(0,204,204,.5);-webkit-border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px;-o-border-radius:5px;border-radius:5px;background-color:#fff;z-index:2147483647}.jd-add-qq .add-qq-header{text-align:right;padding:5px 8px}.jd-add-qq .add-qq-content{display:inline-block;text-align:center;padding:0 20px;margin-bottom:25px;color:#333;text-decoration:none;cursor:auto}.jd-add-qq .qq-warm{font:600 14px "Microsoft YaHei","SimHei","Arial"!important;color:#333;margin-bottom:18px}.jd-add-qq .add-qq-button{margin-top:18px}.jd-add-qq .add-qq-button span{width:145px;height:30px;-webkit-user-select:none;-moz-user-select:none;user-select:none;line-height:30px;text-align:center;background:#ff8b8b;border-radius:15px;cursor:pointer;color:#fff;display:inline-block}.jd-add-qq .add-qq-button span:hover{background-color:#ff7272}.jd-add-qq .add-qq-button span:active{background-color:#ff7272;outline:thin dotted;outline-offset:-2px}.yht-panel-notification{width:360px;z-index:2147483647;background-color:#fff;border:1px solid #eee;box-shadow:0 2px 4px rgba(0,0,0,.12),0 0 6px rgba(0,0,0,.04);transition:opacity .3s,transform .3s,right .3s,top .4s;padding:10px 10px 0;position:fixed;right:0;bottom:10px}.yht-panel-notification .yht-close{display:inline-block;width:8px;height:8px;position:absolute;top:6px;right:5px;background:url("//1pcdn.1haitao.com/explugin/img/panel/icon-close3.png") no-repeat}.yht-panel-notification .goos-item{line-height:0;font-size:12px;text-align:left;border-bottom:1px solid #eee;padding-bottom:10px}.yht-panel-notification .goos-item:before{display:inline-block;vertical-align:middle;content:"";height:100%;font-size:0;line-height:0;width:0}.yht-panel-notification .goos-item>div{display:inline-block;vertical-align:middle;max-width:100%;max-height:100%}.yht-panel-notification .goos-item .img{width:110px;height:80px;display:inline-block;vertical-align:middle;font-size:0;line-height:0;text-align:center}.yht-panel-notification .goos-item .img:before{display:inline-block;vertical-align:middle;content:"";height:100%;font-size:0;line-height:0;width:0}.yht-panel-notification .goos-item .img img{display:inline-block;max-width:100%;max-height:100%;display:inline-block;vertical-align:middle;font-size:1rem;line-height:normal}.yht-panel-notification .goos-item .yht-info{width:220px;height:80px;display:inline-block;color:#999}.yht-panel-notification .goos-item .yht-info .yht-title{font-size:14px;color:#333;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-height:26px}.yht-panel-notification .goos-item .yht-info .yht-subhead{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-top:5px;height:28px}.yht-panel-notification .yht-bottom{text-align:left;margin-top:5px}.yht-panel-notification .yht-bottom>div{display:inline-block}.yht-panel-notification .yht-bottom .yht-left p{background:url("//1pcdn.1haitao.com/explugin/img/yht-icon-logo.png") no-repeat left;padding-left:25px;color:#29cee9;font-size:14px}.yht-panel-notification .yht-bottom .yht-right{display:inline-block;float:right}.yht-panel-notification .yht-bottom .yht-right p{background:url("//1pcdn.1haitao.com/explugin/img/panel/icon-go.png") no-repeat right;padding-right:18px;color:#333}.yht-inject-price{width:460px;font:12px "Microsoft YaHei","SimHei","Arial"!important;background-color:#fff;margin-left:10px}.yht-inject-price ul{font-size:0;line-height:0;text-align:left;border-top:3px solid #29cee9;border-bottom:1px solid #eee}.yht-inject-price ul:before{display:inline-block;vertical-align:middle;content:"";height:100%;font-size:0;line-height:0;width:0}.yht-inject-price ul li{display:inline-block;vertical-align:middle;max-width:100%;max-height:100%}.yht-inject-price li{display:inline-block;font:600 12px "Microsoft YaHei","SimHei","Arial"!important;padding:3px 8px;color:#29cee9;line-height:24px}.yht-inject-price li a{color:#29cee9}.yht-inject-price li span{padding:0 15px;border-left:2px solid #29cee9;border-right:2px solid #29cee9}.yht-inject-price li .yht-app{background:url("//1pcdn.1haitao.com/explugin/img/icon-qr2.png") no-repeat left 1px;padding-left:20px;position:relative;cursor:pointer}.yht-inject-price li .yht-app:hover .tip{display:block}.yht-inject-price li h2{font:600 15px PingFangSC-Regular,"Droid Sans Regular","Rotobo","Microsoft YaHei";margin:5px 0}.yht-inject-price li .tip{display:inline-block;vertical-align:middle;margin:5px;width:145px;font:12px "Microsoft YaHei","SimHei","Arial"!important;word-break:break-line;word-wrap:break-word;text-align:center;position:absolute;top:10px;left:-44px;line-height:16px;color:#29cee9;padding-top:9px}.yht-inject-price li .tip .tip-content{position:relative;background:#fff;border-radius:8px;border:1px solid #29cee9}.yht-inject-price li .tip .tip-content:before,.yht-inject-price li .tip .tip-content:after,.yht-inject-price li .tip .tip-content .before,.yht-inject-price li .tip .tip-content .after{position:absolute;top:-13px;left:65px;width:0;height:0;content:'';border-style:solid;border-color:transparent;border-bottom:9px solid #29cee9;border-left-width:9px;border-right-width:10px}.yht-inject-price li .tip .tip-content:after,.yht-inject-price li .tip .tip-content .after{position:absolute;top:-12px;border-bottom-color:#fff}.yht-inject-price li .tip .tip-content{padding:3px}.yht-inject-price li .tip p{margin:5px 0}.yht-inject-price li .tip{display:none;z-index:999999}.yht-inject-price .yht-active-item{padding:5px 12px}.yht-inject-price .yht-active-item a:hover{color:#f22}.yht-inject-price .yht-active-item p{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;line-height:24px;padding-right:20px;color:#333}</style><script type="text/x-mathjax-config;executed=true">MathJax.Hub.Config({
+  tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] },
+  TeX: { equationNumbers: { autoNumber: ['AMS'], useLabelIds: true }, extensions: ['extpfeil.js'] },
+  'HTML-CSS': { linebreaks: { automatic: true } },
+  SVG: { linebreaks: { automatic: true } }});</script><script type="text/javascript" src="./GitHub团队项目合作流程 - schaepher - 博客园_files/MathJax.js.下载"></script><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+<body><div id="MathJax_Message" style="display: none;"></div>
+<a name="top"></a>
+
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<a id="lnkBlogLogo" href="http://www.cnblogs.com/schaepher/"><img id="blogLogo" src="./GitHub团队项目合作流程 - schaepher - 博客园_files/logo.gif" alt="返回主页"></a>			
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle" href="http://www.cnblogs.com/schaepher/">Schaepher</a></h1>
+<h2>深透理解，熟练运用；似懂非懂，其实不懂。</h2>
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="http://www.cnblogs.com/">博客园</a></li>
+<li><a id="blog_nav_myhome" class="menu" href="http://www.cnblogs.com/schaepher/">首页</a></li>
+<li><a id="blog_nav_newpost" class="menu" rel="nofollow" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">新随笔</a></li>
+<li><a id="blog_nav_contact" class="menu" rel="nofollow" href="https://msg.cnblogs.com/send/schaepher">联系</a></li>
+<li><a id="blog_nav_rss" class="menu" href="http://www.cnblogs.com/schaepher/rss">订阅</a>
+<!--<a id="blog_nav_rss_image" class="aHeaderXML" href="http://www.cnblogs.com/schaepher/rss"><img src="//www.cnblogs.com/images/xml.gif" alt="订阅" /></a>--></li>
+<li><a id="blog_nav_admin" class="menu" rel="nofollow" href="https://i.cnblogs.com/">管理</a></li>
+</ul>
+		<div class="blogStats">
+			
+			
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<div id="post_detail">
+<!--done-->
+<div id="topics">
+	<div class="post">
+		<h1 class="postTitle">
+			<a id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/schaepher/p/4933873.html">GitHub团队项目合作流程</a>
+		</h1>
+		<div class="clear"></div>
+		<div class="postBody">
+			<div id="cnblogs_post_body" class="cnblogs-markdown"><p>已在另一篇博客中写出关于以下问题的解决，<a href="http://www.cnblogs.com/schaepher/p/4970291.html">点此进入</a>：</p>
+<ul>
+<li>同步团队项目到本地时出现冲突怎么办？</li>
+<li>项目负责人merge一个Pull Request后发现有错怎么回退？</li>
+</ul>
+<h2 id="目录">目录：</h2>
+<ul>
+<li><a href="http://www.cnblogs.com/schaepher/p/4933873.html#setup">零、前期准备</a><br>
+</li>
+<li><a href="http://www.cnblogs.com/schaepher/p/4933873.html#dev_branch">一、创建开发分支</a><br>
+</li>
+<li><a href="http://www.cnblogs.com/schaepher/p/4933873.html#fork">二、Fork项目到个人的仓库</a><br>
+</li>
+<li><a href="http://www.cnblogs.com/schaepher/p/4933873.html#clone">三、Clone项目到本地</a><br>
+</li>
+<li><a href="http://www.cnblogs.com/schaepher/p/4933873.html#fetch">四、和团队项目保持同步</a></li>
+<li><a href="http://www.cnblogs.com/schaepher/p/4933873.html#push">五、push修改到自己的项目上</a></li>
+<li><a href="http://www.cnblogs.com/schaepher/p/4933873.html#pull_request">六、请求合并到团队项目上</a></li>
+<li><a href="http://www.cnblogs.com/schaepher/p/4933873.html#review">七、团队项目负责人审核及同意合并请求</a></li>
+</ul>
+<blockquote>
+<p>注：其中 <code>零、一、七</code> 是由团队项目负责人来完成的。开发人员只要从 <code>二</code> 开始就行了。</p>
+</blockquote>
+<hr>
+<p><a name="setup"></a></p>
+<h3 id="零前期准备">零、前期准备：</h3>
+<p>首先把队友直接push的权限关掉，即设置成Read。这样可以防止队友误操作，未经审核就把代码push到团队项目上。<br>
+Teams用来分配issue的时候会用到，所以保留下来，并不是没有用。</p>
+<p><img src="./GitHub团队项目合作流程 - schaepher - 博客园_files/809218-20151103173652383-2141612893.png"></p>
+<p><a name="dev_branch"></a></p>
+<h3 id="一创建开发分支">一、创建开发分支</h3>
+<p>master分支一般用来发布稳定版本，dev分支（开发分支）用来发布开发版本。<br>
+输入分支名称后，下面会跳出Create branch，点击即可创建。</p>
+<blockquote>
+<p>下面图片写的是develop，是因为我们这个项目已经有dev分支了。如果你们没有dev分支，那么名字改成dev即可。这个影响不大。</p>
+</blockquote>
+<p><img src="./GitHub团队项目合作流程 - schaepher - 博客园_files/809218-20151103173701977-299176036.png"></p>
+<p>分支创建完毕后，会自动跳转到dev分支。由于dev分支是从master分支上创建的，因此内容与master分支一致。</p>
+<p><img src="./GitHub团队项目合作流程 - schaepher - 博客园_files/809218-20151103173718133-151518132.png"></p>
+<p><a name="fork"></a></p>
+<h3 id="二fork项目到个人的仓库">二、Fork项目到个人的仓库</h3>
+<p>点击右上角的Fork，并选择你的账号（一般在第一个）。就可以Fork团队项目到个人仓库啦。</p>
+<p><img src="./GitHub团队项目合作流程 - schaepher - 博客园_files/809218-20151103173728117-1181892624.png"></p>
+<p>Fork完成后</p>
+<p><img src="./GitHub团队项目合作流程 - schaepher - 博客园_files/809218-20151103173734758-2060034854.png"></p>
+<p><a name="clone"></a></p>
+<h3 id="三clone项目到本地">三、Clone项目到本地</h3>
+<p>首先是clone，clone的地址可以直接点击按钮复制（如下图）。</p>
+<blockquote>
+<p>推荐使用SSH协议，用HTTP协议有时会出问题。<br>
+注意，这里clone的是你自己仓库里的项目</p>
+</blockquote>
+<p><img src="./GitHub团队项目合作流程 - schaepher - 博客园_files/809218-20151103173744086-1895687789.png"></p>
+<p>打开git命令行，输入指令和刚才复制的地址，回车即可克隆到本地</p>
+<p><img src="./GitHub团队项目合作流程 - schaepher - 博客园_files/809218-20151103173754508-232839332.png"></p>
+<p>此时你只能看到master分支，并没有把dev分支clone下来。使用 <code>git branch</code> 命令查看本地分支，发现本地只有master分支。如下图的①</p>
+<p><img src="./GitHub团队项目合作流程 - schaepher - 博客园_files/809218-20151103173804774-901439442.png"></p>
+<p>如上图的②，使用 <code>git branch -a</code> 查看所有分支，就能看到远程分支。<br>
+根据远程分支，我们可以创建一个新的本地分支dev，并把该项目的dev分支的内容放到本地dev分支。如上图③。</p>
+<blockquote>
+<p><code>git checkout -b dev origin/dev</code> 的意思是，创建一个dev分支（-b），并把远程dev分支（origin/dev）的内容放在该分支内。接着切换到该分支（checkout）</p>
+</blockquote>
+<p>现在使用 <code>git branch</code> 可以查看两个分支，并且用 <code>ls</code> 或者 <code>dir</code> 就能看到dev分支的内容了。想切换回master分支的时候，再用 <code>git checkout master</code> 即可。</p>
+<p><img src="./GitHub团队项目合作流程 - schaepher - 博客园_files/809218-20151103173815383-1352448645.png"></p>
+<p>上面的操作完成后，你就可以在本地进行开发了。但是如果要将你修改完的代码合并到团队项目上，还需要进行下面的操作。</p>
+<p><a name="fetch"></a></p>
+<h3 id="四和团队项目保持同步">四、和团队项目保持同步</h3>
+<p>首先查看有没有设置upstream，使用 <code>git remote -v</code> 命令来查看。如下图①</p>
+<p><img src="./GitHub团队项目合作流程 - schaepher - 博客园_files/809218-20151103173823883-310889332.png"></p>
+<p>如果没有显示upstream，则使用 <code>git remote add upstream 团队项目地址</code> 命令。如上图②<br>
+接着再次使用 <code>git remote -v</code> ，如果如上图③，显示出了upstream，那么就设置好了</p>
+<p>开始同步。首先执行 <code>git fetch upstream</code> 获取团队项目最新版本。如下图①</p>
+<p><img src="./GitHub团队项目合作流程 - schaepher - 博客园_files/809218-20151103173833321-842340487.png"></p>
+<p>此时并没有把最新版本合并到你本地的分支上，因此还需要一步。如上图②，当前分支是dev分支，执行 <code>git merge upstream/dev</code> 命令后，会将源分支（upstream/dev）合并到当前分支（dev）。</p>
+<blockquote>
+<p>如果你是在本地的master分支上开发，那么在使用该命令前，先切换到master分支。<br>
+merge的时候，有可能碰到冲突。需要解决冲突才能继续下面的操作。冲突的解决可以参考→ <a href="http://www.cnblogs.com/schaepher/p/4970291.html#conflict">冲突的解决</a></p>
+</blockquote>
+<p><a name="push"></a></p>
+<h3 id="五push修改到自己的项目上">五、push修改到自己的项目上</h3>
+<p>解决冲突后，就可以使用 <code>git push</code> 命令将本地的修改同步到自己的GitHub仓库上了。</p>
+<blockquote>
+<p>注意，在当前所在分支使用push，会push到与这个分支相关联的远程仓库分支。这里dev分支与origin/dev关联，因此push到GitHub上的dev分支。</p>
+</blockquote>
+<p><img src="./GitHub团队项目合作流程 - schaepher - 博客园_files/809218-20151103173844258-889781053.png"></p>
+<p><a name="pull_request"></a></p>
+<h3 id="六请求合并到团队项目上">六、请求合并到团队项目上</h3>
+<p>首先到你的GitHub上，进入你Fork的仓库里。点击红框处的Pull request</p>
+<p><img src="./GitHub团队项目合作流程 - schaepher - 博客园_files/809218-20151103173852555-1275593404.png"></p>
+<p>下图左边红框，表示要合并到fzu2015/CourseManagement项目的dev分支。<br>
+下图右边红框，表示要从自己仓库的dev分支发起合并请求。<br>
+点击红框处的 Create pull request就可以发送合并请求了。</p>
+<p><img src="./GitHub团队项目合作流程 - schaepher - 博客园_files/809218-20151103173859774-105197351.png"></p>
+<p>当然，在发送请求之前，你可以检查一下你都改了哪些东西。在上面那个页面往下拉，就可以看到两者的对比。如下图</p>
+<p><img src="./GitHub团队项目合作流程 - schaepher - 博客园_files/809218-20151103173927555-1477286515.png"></p>
+<p>以上操作结束后，团队成员的流程就结束了。最后一步交给团队项目负责人来完成。</p>
+<p><a name="review"></a></p>
+<h3 id="七团队项目负责人审核及同意合并请求">七、团队项目负责人审核及同意合并请求</h3>
+<p>首先进入GitHub的团队项目仓库中。此时右边的Pull requests显示当前项目有几个Pull request。点击进入查看。</p>
+<p><img src="./GitHub团队项目合作流程 - schaepher - 博客园_files/809218-20151103173935789-846829992.png"></p>
+<p>选择一个Pull request</p>
+<p><img src="./GitHub团队项目合作流程 - schaepher - 博客园_files/809218-20151103173942977-1760127709.png"></p>
+<p><a name="notice"></a></p>
+<p>项目负责人审核有两个要注意的地方</p>
+<ul>
+<li>一个是下图的①。一定要看清楚是合并到哪个分支。这里是从schaepher的dev分支合并到fzu2015的dev分支。</li>
+<li><p>另一个是下图的②。点击进去后，就可以查看该Pull request对项目做了哪些修改。这样如果有问题，可以及时发现，并关闭该Pull request。</p>
+<blockquote>
+<p>如果关闭了，一定要告诉队友，否则他可能会不知道。虽然也可以直接在下面发布Comment告诉他，但队友不一定看到。</p>
+</blockquote>
+<p><img src="./GitHub团队项目合作流程 - schaepher - 博客园_files/809218-20151103173949711-1666366145.png"></p></li>
+<li><p>如果没有问题，可以点击Merge pull request。这样就合并好了。</p></li>
+</ul>
+</div><div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory">分类: <a href="http://www.cnblogs.com/schaepher/category/771211.html" target="_blank">工具学习笔记</a></div>
+<div id="EntryTag">标签: <a href="http://www.cnblogs.com/schaepher/tag/%E5%9B%A2%E9%98%9F%E5%90%88%E4%BD%9C/">团队合作</a>, <a href="http://www.cnblogs.com/schaepher/tag/git%E5%9B%A2%E9%98%9F%E5%90%88%E4%BD%9C/">git团队合作</a>, <a href="http://www.cnblogs.com/schaepher/tag/github%E5%9B%A2%E9%98%9F%E5%90%88%E4%BD%9C/">github团队合作</a></div>
+<div id="blog_post_info"><div id="green_channel">
+        <a href="javascript:void(0);" id="green_channel_digg" onclick="DiggIt(4933873,cb_blogId,1);green_channel_success(this,&#39;谢谢推荐！&#39;);">好文要顶</a>
+            <a id="green_channel_follow" onclick="follow(&#39;595284c7-ff56-e511-b908-9dcfd8948a71&#39;);" href="javascript:void(0);">关注我</a>
+    <a id="green_channel_favorite" onclick="AddToWz(cb_entryId);return false;" href="javascript:void(0);">收藏该文</a>
+    <a id="green_channel_weibo" href="javascript:void(0);" title="分享至新浪微博" onclick="ShareToTsina()"><img src="./GitHub团队项目合作流程 - schaepher - 博客园_files/icon_weibo_24.png" alt=""></a>
+    <a id="green_channel_wechat" href="javascript:void(0);" title="分享至微信" onclick="shareOnWechat()"><img src="./GitHub团队项目合作流程 - schaepher - 博客园_files/wechat.png" alt=""></a>
+</div>
+<div id="author_profile">
+    <div id="author_profile_info" class="author_profile_info">
+            <a href="http://home.cnblogs.com/u/schaepher/" target="_blank"><img src="./GitHub团队项目合作流程 - schaepher - 博客园_files/20150915093203.png" class="author_avatar" alt=""></a>
+        <div id="author_profile_detail" class="author_profile_info">
+            <a href="http://home.cnblogs.com/u/schaepher/">schaepher</a><br>
+            <a href="http://home.cnblogs.com/u/schaepher/followees">关注 - 80</a><br>
+            <a href="http://home.cnblogs.com/u/schaepher/followers">粉丝 - 130</a>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="author_profile_honor"></div>
+    <div id="author_profile_follow">
+                <a href="javascript:void(0);" onclick="follow(&#39;595284c7-ff56-e511-b908-9dcfd8948a71&#39;);return false;">+加关注</a>
+    </div>
+</div>
+<div id="div_digg">
+    <div class="diggit" onclick="votePost(4933873,&#39;Digg&#39;)">
+        <span class="diggnum" id="digg_count">3</span>
+    </div>
+    <div class="buryit" onclick="votePost(4933873,&#39;Bury&#39;)">
+        <span class="burynum" id="bury_count">0</span>
+    </div>
+    <div class="clear"></div>
+    <div class="diggword" id="digg_tips">
+    </div>
+</div>
+</div>
+<div class="clear"></div>
+<div id="post_next_prev"><a href="http://www.cnblogs.com/schaepher/p/4931036.html" class="p_n_p_prefix">« </a> 上一篇：<a href="http://www.cnblogs.com/schaepher/p/4931036.html" title="发布于2015-11-02 18:58">我的“买家”秀</a><br><a href="http://www.cnblogs.com/schaepher/p/4937762.html" class="p_n_p_prefix">» </a> 下一篇：<a href="http://www.cnblogs.com/schaepher/p/4937762.html" title="发布于2015-11-04 23:06">项目耗时估计的方法</a><br></div>
+</div>
+
+
+		</div>
+		<div class="postDesc">posted @ <span id="post-date">2015-11-03 17:44</span> <a href="http://www.cnblogs.com/schaepher/">schaepher</a> 阅读(<span id="post_view_count">5527</span>) 评论(<span id="post_comment_count">9</span>)  <a href="https://i.cnblogs.com/EditPosts.aspx?postid=4933873" rel="nofollow">编辑</a> <a href="http://www.cnblogs.com/schaepher/p/4933873.html#" onclick="AddToWz(4933873);return false;">收藏</a></div>
+	</div>
+	<script src="./GitHub团队项目合作流程 - schaepher - 博客园_files/highlight.min.js.下载"></script><script>markdown_highlight();</script><script type="text/javascript">var allowComments=true,cb_blogId=244067,cb_entryId=4933873,cb_blogApp=currentBlogApp,cb_blogUserGuid='595284c7-ff56-e511-b908-9dcfd8948a71',cb_entryCreatedDate='2015/11/3 17:44:00';loadViewCount(cb_entryId);</script>
+	
+</div><!--end: topics 文章、评论容器-->
+</div><a name="!comments"></a><div id="blog-comments-placeholder"><div id="comments_pager_top"></div>
+<br>
+<div class="feedback_area_title">评论列表</div>
+<div class="feedbackNoItems"></div>	
+
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/schaepher/p/4933873.html#3298222" class="layer">#1楼</a><a name="3298222" id="comment_anchor_3298222"></a>  <span class="comment_date">2015-11-03 18:14</span> <a id="a_comment_author_3298222" href="http://www.cnblogs.com/france/" target="_blank">france</a> <a href="http://msg.cnblogs.com/send/france" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3298222" class="blog_comment_body">赞</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3298222,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3298222,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/schaepher/p/4933873.html#3298277" class="layer">#2楼</a><a name="3298277" id="comment_anchor_3298277"></a>  <span class="comment_date">2015-11-03 19:58</span> <a id="a_comment_author_3298277" href="http://www.cnblogs.com/imguang/" target="_blank">imguang</a> <a href="http://msg.cnblogs.com/send/imguang" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3298277" class="blog_comment_body">同赞</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3298277,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3298277,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3298277_avatar" style="display:none;">http://pic.cnblogs.com/face/809834/20151003113323.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/schaepher/p/4933873.html#3298352" class="layer">#3楼</a><a name="3298352" id="comment_anchor_3298352"></a>  <span class="comment_date">2015-11-03 22:26</span> <a id="a_comment_author_3298352" href="http://www.cnblogs.com/dasusu/" target="_blank">请叫我大苏</a> <a href="http://msg.cnblogs.com/send/%E8%AF%B7%E5%8F%AB%E6%88%91%E5%A4%A7%E8%8B%8F" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3298352" class="blog_comment_body">大大赞</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3298352,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3298352,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3298352_avatar" style="display:none;">http://pic.cnblogs.com/face/810210/20150915211453.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/schaepher/p/4933873.html#3308497" class="layer">#4楼</a><a name="3308497" id="comment_anchor_3308497"></a>  <span class="comment_date">2015-11-17 16:58</span> <a id="a_comment_author_3308497" href="http://www.cnblogs.com/youngx/" target="_blank">某科学的超电灯泡</a> <a href="http://msg.cnblogs.com/send/%E6%9F%90%E7%A7%91%E5%AD%A6%E7%9A%84%E8%B6%85%E7%94%B5%E7%81%AF%E6%B3%A1" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3308497" class="blog_comment_body">6666666666</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3308497,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3308497,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3308497_avatar" style="display:none;">http://pic.cnblogs.com/face/811135/20150921124233.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/schaepher/p/4933873.html#3558347" class="layer">#5楼</a><a name="3558347" id="comment_anchor_3558347"></a>  <span class="comment_date">2016-11-17 14:00</span> <a id="a_comment_author_3558347" href="http://www.cnblogs.com/zhanyd/" target="_blank">zhanyd</a> <a href="http://msg.cnblogs.com/send/zhanyd" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3558347" class="blog_comment_body">棒棒哒</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3558347,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3558347,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3558347_avatar" style="display:none;">http://pic.cnblogs.com/face/u360288.jpg?id=17165037</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/schaepher/p/4933873.html#3558624" class="layer">#6楼</a><a name="3558624" id="comment_anchor_3558624"></a>[<span class="louzhu">楼主</span>]  <span class="comment_date">2016-11-17 17:04</span> <a id="a_comment_author_3558624" href="http://www.cnblogs.com/schaepher/" target="_blank">schaepher</a> <a href="http://msg.cnblogs.com/send/schaepher" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3558624" class="blog_comment_body"><a href="http://www.cnblogs.com/schaepher/p/4933873.html#3558347" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3558347);">@</a>
+zhanyd<br><fieldset class="comment_quote"><legend><a href="http://www.cnblogs.com/schaepher/p/4933873.html#3558347" title="查看引用原文">引用</a></legend>棒棒哒</fieldset><br>谢谢哒。<br>欢迎提出改进的建议 :)</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3558624,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3558624,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3558624_avatar" style="display:none;">http://pic.cnblogs.com/face/809218/20150915093203.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/schaepher/p/4933873.html#3579603" class="layer">#7楼</a><a name="3579603" id="comment_anchor_3579603"></a>  <span class="comment_date">2016-12-13 17:29</span> <a id="a_comment_author_3579603" href="http://home.cnblogs.com/u/1080063/" target="_blank">蛋仔星星</a> <a href="http://msg.cnblogs.com/send/%E8%9B%8B%E4%BB%94%E6%98%9F%E6%98%9F" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3579603" class="blog_comment_body">请教 如何回退远程仓库的代码 如果本地git reset 后 本地版本比远程低 肯定是push是不行 怎么才能直接回退远程仓库代码呢</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3579603,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3579603,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/schaepher/p/4933873.html#3579816" class="layer">#8楼</a><a name="3579816" id="comment_anchor_3579816"></a>[<span class="louzhu">楼主</span>]  <span class="comment_date">2016-12-13 22:28</span> <a id="a_comment_author_3579816" href="http://www.cnblogs.com/schaepher/" target="_blank">schaepher</a> <a href="http://msg.cnblogs.com/send/schaepher" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3579816" class="blog_comment_body"><a href="http://www.cnblogs.com/schaepher/p/4933873.html#3579603" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3579603);">@</a>
+蛋仔星星<br><fieldset class="comment_quote"><legend><a href="http://www.cnblogs.com/schaepher/p/4933873.html#3579603" title="查看引用原文">引用</a></legend>请教 如何回退远程仓库的代码 如果本地git reset 后 本地版本比远程低 肯定是push是不行 怎么才能直接回退远程仓库代码呢</fieldset><br><br>两种方法：<br>1. 使用GitHub上的revert功能，请看：<a href="http://www.cnblogs.com/schaepher/p/4970291.html#back" target="_blank">Revert一个merge</a><br>2. 具有管理权限的项目负责人直接从团队仓库中clone项目，并且在reset后使用强制push，请看：<a href="http://www.cnblogs.com/schaepher/p/4970291.html#push_force" target="_blank">强制push</a></div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3579816,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3579816,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3579816_avatar" style="display:none;">http://pic.cnblogs.com/face/809218/20150915093203.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/schaepher/p/4933873.html#3580372" class="layer">#9楼</a><a name="3580372" id="comment_anchor_3580372"></a><span id="comment-maxId" style="display:none;">3580372</span><span id="comment-maxDate" style="display:none;">2016/12/14 13:17:00</span>  <span class="comment_date">2016-12-14 13:17</span> <a id="a_comment_author_3580372" href="http://home.cnblogs.com/u/1080063/" target="_blank">蛋仔星星</a> <a href="http://msg.cnblogs.com/send/%E8%9B%8B%E4%BB%94%E6%98%9F%E6%98%9F" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3580372" class="blog_comment_body"><a href="http://www.cnblogs.com/schaepher/p/4933873.html#3579816" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3579816);">@</a>
+schaepher<br>感谢  小公司 以前用svn 或者不用团队配合 GitHub刚接触</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3580372,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3580372,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	<div id="comments_pager_bottom"></div></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id="comment_form" class="commentform">
+<a name="commentform"></a>
+<div id="divCommentShow"></div>
+<div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="http://www.cnblogs.com/schaepher/p/4933873.html#" onclick="return RefreshPage();">刷新页面</a><a href="http://www.cnblogs.com/schaepher/p/4933873.html#top">返回顶部</a></div>
+<div id="comment_form_container"><div class="login_tips">注册用户登录后才能发表评论，请 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return login(&#39;commentform&#39;);">登录</a> 或 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return register();">注册</a>，<a href="http://www.cnblogs.com/">访问</a>网站首页。</div></div>
+<div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+<div id="ad_t2"><a href="http://www.ucancode.com/index.htm" target="_blank">【推荐】50万行VC++源码: 大型组态工控、电力仿真CAD与GIS源码库</a><br></div>
+<div id="opt_under_post"></div>
+<div id="cnblogs_c1" class="c_ad_block"><a href="http://www.gcpowertools.com.cn/products/componentoneenterprise/visualstudio.htm?utm_source=cnblogs&amp;utm_medium=blogpage&amp;utm_term=bottom&amp;utm_content=C1&amp;utm_campaign=community" target="_blank"><img width="300" height="250" src="./GitHub团队项目合作流程 - schaepher - 博客园_files/24442-20170531232608899-508438133.png" alt="C1"></a></div>
+<div id="under_post_news"><div class="itnews c_ad_block"><b>最新IT新闻</b>:<br> ·  <a href="http://news.cnblogs.com/n/571309/" target="_blank">倪光南炮轰Windows 10政府版没过审查 微软合作方回应</a><br> ·  <a href="http://news.cnblogs.com/n/571308/" target="_blank">阿里宣布淘宝、天猫会员体系统一！“淘气值”将作为衡量标准</a><br> ·  <a href="http://news.cnblogs.com/n/571307/" target="_blank">恶劣天气航班何时恢复竟靠人来算！阿里云联手厦航解决</a><br> ·  <a href="http://news.cnblogs.com/n/571306/" target="_blank">芝麻分700+免流水办日本5年签证停止服务：赔偿用户500元</a><br> ·  <a href="http://news.cnblogs.com/n/571305/" target="_blank">本田无人驾驶车进程首度曝光 2025年完全自驾</a><br>» <a href="http://news.cnblogs.com/" title="IT新闻" target="_blank">更多新闻...</a></div></div>
+<div id="cnblogs_c2" class="c_ad_block"><a href="https://www.mtyun.com/activity-anniversary?site=cnblogs&amp;campaign=20170601sales" target="_blank"><img width="468" height="60" src="./GitHub团队项目合作流程 - schaepher - 博客园_files/24442-20170608095106606-2028001864.png" alt="美团云"></a></div>
+<div id="under_post_kb"><div class="itnews c_ad_block" id="kb_block"><b>最新知识库文章</b>:<br><div id="kb_recent"> ·  <a href="http://kb.cnblogs.com/page/570194/" target="_blank">小printf的故事：真正的程序员？</a><br> ·  <a href="http://kb.cnblogs.com/page/569992/" target="_blank">程序员的工作、学习与绩效</a><br> ·  <a href="http://kb.cnblogs.com/page/569056/" target="_blank">软件开发为什么很难</a><br> ·  <a href="http://kb.cnblogs.com/page/565901/" target="_blank">唱吧DevOps的落地，微服务CI/CD的范本技术解读</a><br> ·  <a href="http://kb.cnblogs.com/page/566523/" target="_blank">程序员，如何从平庸走向理想？</a><br></div>» <a href="http://kb.cnblogs.com/" target="_blank">更多知识库文章...</a></div></div>
+<div id="HistoryToday" class="c_ad_block"></div>
+<script type="text/javascript">
+    fixPostBody();
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverAdT2();
+    deliverAdC1();
+    deliverAdC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);   
+</script>
+</div>
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<!--done-->
+<div class="newsItem">
+<h3 class="catListTitle">公告</h3>
+	<div id="blog-news"><img alt="" src="./GitHub团队项目合作流程 - schaepher - 博客园_files/809218-20150920153515570-1159262980.jpg">
+<li>GitHub: <a href="https://github.com/schaepher" target="_blank">Schaepher</a></li><div id="profile_block">昵称：<a href="http://home.cnblogs.com/u/schaepher/">schaepher</a><br>园龄：<a href="http://home.cnblogs.com/u/schaepher/" title="入园时间：2015-09-09">1年9个月</a><br>粉丝：<a href="http://home.cnblogs.com/u/schaepher/followers/">130</a><br>关注：<a href="http://home.cnblogs.com/u/schaepher/followees/">80</a><div id="p_b_follow"><a href="javascript:void(0);" onclick="follow(&#39;595284c7-ff56-e511-b908-9dcfd8948a71&#39;)">+加关注</a></div></div></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script type="text/javascript">loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"><div id="sidebar_search" class="sidebar-block"></div><div id="sidebar_shortcut" class="sidebar-block">
+<div class="catListLink">
+<h3 class="catListTitle">常用链接</h3>
+<ul>
+<li><a href="http://www.cnblogs.com/schaepher/p/" title="我的博客的随笔列表">我的随笔</a></li><li><a href="http://www.cnblogs.com/schaepher/MyComments.html" title="我发表过的评论列表">我的评论</a></li><li><a href="http://www.cnblogs.com/schaepher/OtherPosts.html" title="我评论过的随笔列表">我的参与</a></li><li><a href="http://www.cnblogs.com/schaepher/RecentComments.html" title="我的博客的评论列表">最新评论</a></li><li><a href="http://www.cnblogs.com/schaepher/tag/" title="我的博客的标签列表">我的标签</a></li>
+</ul>
+<div id="itemListLin_con" style="display:none;">
+<ul>
+
+</ul>
+</div>
+</div></div><div id="sidebar_categories">
+<div id="sidebar_postcategory" class="catListPostCategory sidebar-block">
+<h3 class="catListTitle">随笔分类</h3>
+
+<ul>
+
+<li><a id="CatList_LinkList_0_Link_0" href="http://www.cnblogs.com/schaepher/category/964298.html">《构建之法》(1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_1" href="http://www.cnblogs.com/schaepher/category/937797.html">Android(7)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_2" href="http://www.cnblogs.com/schaepher/category/966335.html">Linux/Ubuntu(3)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_3" href="http://www.cnblogs.com/schaepher/category/940223.html">UML和设计模式(2)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_4" href="http://www.cnblogs.com/schaepher/category/771211.html">工具学习笔记(10)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_5" href="http://www.cnblogs.com/schaepher/category/957102.html">集美大学软工助教(15)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_6" href="http://www.cnblogs.com/schaepher/category/771207.html">计算机知识(3)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_7" href="http://www.cnblogs.com/schaepher/category/837842.html">面向对象助教(3)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_8" href="http://www.cnblogs.com/schaepher/category/837845.html">其他(9)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_9" href="http://www.cnblogs.com/schaepher/category/771206.html">软件工程实践课(18)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_10" href="http://www.cnblogs.com/schaepher/category/966795.html">算法与数据结构(2)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_11" href="http://www.cnblogs.com/schaepher/category/847979.html">项目笔记(3)</a> </li>
+
+</ul>
+
+</div>
+
+<div id="sidebar_postarchive" class="catListPostArchive sidebar-block">
+<h3 class="catListTitle">随笔档案</h3>
+
+<ul>
+
+<li><a id="CatList_LinkList_1_Link_0" href="http://www.cnblogs.com/schaepher/archive/2017/05.html">2017年5月 (4)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_1" href="http://www.cnblogs.com/schaepher/archive/2017/04.html">2017年4月 (8)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_2" href="http://www.cnblogs.com/schaepher/archive/2017/03.html">2017年3月 (15)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_3" href="http://www.cnblogs.com/schaepher/archive/2017/02.html">2017年2月 (5)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_4" href="http://www.cnblogs.com/schaepher/archive/2017/01.html">2017年1月 (9)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_5" href="http://www.cnblogs.com/schaepher/archive/2016/11.html">2016年11月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_6" href="http://www.cnblogs.com/schaepher/archive/2016/10.html">2016年10月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_7" href="http://www.cnblogs.com/schaepher/archive/2016/09.html">2016年9月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_8" href="http://www.cnblogs.com/schaepher/archive/2016/08.html">2016年8月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_9" href="http://www.cnblogs.com/schaepher/archive/2016/07.html">2016年7月 (4)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_10" href="http://www.cnblogs.com/schaepher/archive/2016/06.html">2016年6月 (3)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_11" href="http://www.cnblogs.com/schaepher/archive/2016/03.html">2016年3月 (3)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_12" href="http://www.cnblogs.com/schaepher/archive/2016/02.html">2016年2月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_13" href="http://www.cnblogs.com/schaepher/archive/2015/12.html">2015年12月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_14" href="http://www.cnblogs.com/schaepher/archive/2015/11.html">2015年11月 (5)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_15" href="http://www.cnblogs.com/schaepher/archive/2015/10.html">2015年10月 (9)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_16" href="http://www.cnblogs.com/schaepher/archive/2015/09.html">2015年9月 (5)</a> </li>
+
+</ul>
+
+</div>
+
+</div><div id="sidebar_scorerank" class="sidebar-block">
+<div class="catListBlogRank">
+<h3 class="catListTitle">积分与排名</h3>
+<ul>
+	<li class="liScore">
+		积分 -	35709
+	</li>
+	<li class="liRank">
+		排名 -	8216
+	</li>
+</ul>
+</div>
+
+
+</div><div id="sidebar_topviewedposts" class="sidebar-block"><div id="topview_posts_wrap">
+<div class="catListView">
+<h3 class="catListTitle">阅读排行榜</h3>
+	<div id="TopViewPostsBlock"><ul><li><a href="http://www.cnblogs.com/schaepher/p/5561193.html">1. Git和Github简单教程(19502)</a></li><li><a href="http://www.cnblogs.com/schaepher/p/4823181.html">2. 练习一：GitHub Desktop下载及使用(7067)</a></li><li><a href="http://www.cnblogs.com/schaepher/p/4933873.html">3. GitHub团队项目合作流程(5527)</a></li><li><a href="http://www.cnblogs.com/schaepher/p/4970291.html">4. Git的其他用法(3135)</a></li><li><a href="http://www.cnblogs.com/schaepher/p/5011392.html">5. PHPUnit在Windows下的配置及使用(2027)</a></li><li><a href="http://www.cnblogs.com/schaepher/p/6680745.html">6. 记一次失败的面试(1606)</a></li><li><a href="http://www.cnblogs.com/schaepher/p/5934184.html">7. 用atom写LaTeX文档(1604)</a></li><li><a href="http://www.cnblogs.com/schaepher/p/5655659.html">8. Android带侧滑菜单和ToolBar的BaseActivity(1464)</a></li><li><a href="http://www.cnblogs.com/schaepher/p/5061966.html">9. 软工实践课程总结(742)</a></li><li><a href="http://www.cnblogs.com/schaepher/p/6375076.html">10. 单元测试学习笔记(547)</a></li></ul></div>
+</div>
+</div></div><div id="sidebar_topdiggedposts" class="sidebar-block"><div id="topdigg_posts_wrap">
+<div class="catListView">
+<h3 class="catListTitle">推荐排行榜</h3>
+<div id="TopDiggPostsBlock"><ul><li><a href="http://www.cnblogs.com/schaepher/p/5561193.html">1. Git和Github简单教程(26)</a></li><li><a href="http://www.cnblogs.com/schaepher/p/4823181.html">2. 练习一：GitHub Desktop下载及使用(4)</a></li><li><a href="http://www.cnblogs.com/schaepher/p/5061966.html">3. 软工实践课程总结(4)</a></li><li><a href="http://www.cnblogs.com/schaepher/p/5011392.html">4. PHPUnit在Windows下的配置及使用(4)</a></li><li><a href="http://www.cnblogs.com/schaepher/p/4970291.html">5. Git的其他用法(3)</a></li><li><a href="http://www.cnblogs.com/schaepher/p/4933873.html">6. GitHub团队项目合作流程(3)</a></li><li><a href="http://www.cnblogs.com/schaepher/p/5816574.html">7. 早睡早起的事(v160829)(3)</a></li><li><a href="http://www.cnblogs.com/schaepher/p/6289146.html">8. MS Word 目录排版(3)</a></li><li><a href="http://www.cnblogs.com/schaepher/p/6680745.html">9. 记一次失败的面试(3)</a></li><li><a href="http://www.cnblogs.com/schaepher/p/6375076.html">10. 单元测试学习笔记(3)</a></li></ul></div>
+</div></div></div></div><script type="text/javascript">loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		
+<!--done-->
+Copyright ©2017 schaepher
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+<a data-cltversion="2.4.9" data-cltsource="10011" data-cltuuid="c7c77b022d9145872c9ada3be5d2c394" data-cltats="4" href="javascript:" id="yht-info-explugin" style="display: none;"></a><a data-cltversion="1.0.4" data-cltsource="410011" data-cltuuid="c7c77b022d9145872c9ada3be5d2c394" data-cltats="4" href="javascript:" id="tools-nav-explugin" style="display: none;"></a><a data-cltversion="1.0.2" data-cltsource="510011" data-cltuuid="c7c77b022d9145872c9ada3be5d2c394" data-cltats="4" href="javascript:" id="tools-newtab-explugin" style="display: none;">//4pcdn.1haitao.com/extension-tools/js/extensionNav.js?v=1456901123826</a></body></html>
